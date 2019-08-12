@@ -1,10 +1,6 @@
 import React from 'react';
-import {
-View,
-  Text,
-  StyleSheet
- 
-} from 'react-native';
+import { StyleSheet,Text,View } from 'react-native';
+import {Category} from './source/Containers/Category.js'
 
 const App = () => {
   return (
@@ -13,12 +9,13 @@ const App = () => {
     </View>
   );
 };
-export default App;
+export default Category;
 const styles=StyleSheet.create({
   rectangle3 : {
     width: 375,
     height: 275,
-    backgroundColor:'#fcb69f'
+    backgroundColor: '#fcb69f'
+    
   },
   
 });
