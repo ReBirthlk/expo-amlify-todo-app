@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React from'react';
 import {StyleSheet,View,Text} from 'react-native'
 
@@ -51,3 +52,5 @@ const styles=StyleSheet.create({
    
 
 });
+=======
+>>>>>>> 93f26c776cf4baca1bdf535eaf3f8c12c9aefea6
