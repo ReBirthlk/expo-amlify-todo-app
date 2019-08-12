@@ -25,6 +25,7 @@ const styles=StyleSheet.create({
         letterSpacing: 0,
         textAlign: 'center',
         color: "#ffffff",
+    
     },
     rectangle3 : {
         width: 375,
