@@ -1,12 +1,14 @@
 import React from'react';
 import {Text,StyleSheet,StatusBar,View} from 'react-native'
+import { Icon} from 'native-base';
 
 export class CategoryHeader extends React.Component{
     render() {
         return (
             <View style={styles.rectangle3}>
            <StatusBar backgroundColor="#fcb69f"/>
-           <Text style={styles.category}>Category</Text>
+           <Icon  name="md-menu" /><Text style={styles.category}> Category</Text>
+           <Icon  name="md-add-circle" />
             </View>
             
 
@@ -23,7 +25,6 @@ const styles=StyleSheet.create({
         fontWeight: "bold",
         fontStyle: "normal",
         letterSpacing: 0,
-        textAlign: 'center',
         color: "#ffffff",
     
     },
