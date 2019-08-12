@@ -4,17 +4,17 @@ import {StyleSheet,View,Text} from 'react-native'
 
 
 export class Header extends React.Component{
+    
     render(){
-
         return(
+            
             <View
                 style={styles.rectangle3}>
                     <View  style={styles.schedule}>
-                    <Text>Schedule</Text>
-                
-                  
+                        <Text>Schedule</Text>
+                        <Text>12,AUG 2019</Text>
                     </View>
-                   </View>
+            </View>
         );
     }
 
@@ -35,6 +35,19 @@ const styles=StyleSheet.create({
         letterSpacing: 0,
         textAlign: "center",
         color: "#ffffff"
+      },
+      date:{
+        width: 92,
+        height: 22,
+        fontFamily: "HelveticaNeue",
+        fontSize: 20,
+        fontWeight: "normal",
+        fontStyle: "normal",
+        letterSpacing: 0,
+        textAlign: "center",
+        color: "#ffffff"
+
       }
+   
 
 });
