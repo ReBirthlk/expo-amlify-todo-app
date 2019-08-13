@@ -1,7 +1,7 @@
-import React from 'react';
-import { StyleSheet,Text,View } from 'react-native';
-import {Category} from './source/Containers/Category.js'
-import { Schedule } from './source/Containers/Schedule.js';
+import React from "react";
+import { StyleSheet, Text, View } from "react-native";
+import { Category } from "./source/Containers/Category.js";
+import { Schedule } from "./source/Containers/Schedule.js";
 
 const App = () => {
   return (
@@ -11,11 +11,10 @@ const App = () => {
   );
 };
 export default Schedule;
-const styles=StyleSheet.create({
-  rectangle3 : {
+const styles = StyleSheet.create({
+  rectangle3: {
     width: 375,
     height: 275,
-    backgroundColor: '#fcb69f'
-  },
-
+    backgroundColor: "#fcb69f"
+  }
 });
