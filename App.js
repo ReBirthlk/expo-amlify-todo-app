@@ -1,6 +1,7 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import { Category } from './source/Containers/Category.js'
+import { Schedule } from './source/Containers/Schedule.js';
 
 const App = () => {
   return (
@@ -15,7 +16,5 @@ const styles = StyleSheet.create({
     width: 375,
     height: 275,
     backgroundColor: '#fcb69f'
-
-  },
-
+  }
 });

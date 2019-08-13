@@ -8,11 +8,8 @@ export class Category extends React.Component{
         return (
           <View style={styles.container}>
                   <CategoryHeader/>
-                  <Card/>
-                  
+                  <Card/>          
           </View>
-           
-
         );
        
     }
