@@ -14,7 +14,8 @@ export class Card extends React.Component {
                     <View style={{ flexDirection: "row", justifyContent: 'space-between', padding: 10 }}>
                         <View style={styles.rectangle5}>
                             <Icon name="ios-contacts" style={styles.icon1} >
-                                <Text style={styles.personal}>Personal</Text><Icon name="ios-more" style={styles.icon2} /></Icon>
+                                <Text style={styles.personal}>Personal</Text>
+                                <Icon name="ios-more" style={styles.icon2} /></Icon>
                             <Text style={styles.tasks}>12Tasks</Text>
                         </View>
                     </View>
@@ -77,11 +78,11 @@ const styles = StyleSheet.create({
         letterSpacing: 0,
         alignItems: 'center',
         color: "#a3a3a3",
+        paddingStart:10
+      
 
     },
     tasks: {
-        width: 48,
-        height: 16,
         fontFamily: "HelveticaNeue",
         fontSize: 14,
         fontWeight: "normal",
@@ -150,14 +151,12 @@ const styles = StyleSheet.create({
     },
     icon1: {
         paddingLeft: 40,
-        fontSize: 30,
-        color: 'pink'
+        fontSize: 40,
+        color: 'pink',
     },
     icon2: {
         paddingLeft: 40,
-        fontSize: 30,
+        fontSize: 40,
         color: 'black'
-    },
-
-
+    }
 });
