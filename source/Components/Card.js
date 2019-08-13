@@ -1,5 +1,6 @@
 import React from'react';
 import {Text,StyleSheet,View} from 'react-native'
+import { Icon} from 'native-base';
 
 export class Card extends React.Component{
     render() {
@@ -11,21 +12,24 @@ export class Card extends React.Component{
 
 <View style={{flexDirection:"row",justifyContent:'space-between',padding:10}}>
 <View style={styles.rectangle5}>
-            <Text style={styles.personal}>Personal</Text>
+            <Icon  name="ios-contacts" style={styles.icon1} >
+            <Text style={styles.personal}>Personal</Text><Icon  name="ios-more" style={styles.icon2}/></Icon>
             <Text style={styles.tasks}>12Tasks</Text>
             </View>
 </View>
             
 <View style={{flexDirection:"row",justifyContent:'space-between',padding:10}}>
             <View style={styles.rectangle12}>
-            <Text style={styles.shoping}>Shoping</Text>
+            <Icon  name="md-rose" style={styles.icon1} >
+            <Text style={styles.shoping}>Shoping</Text><Icon  name="ios-more" style={styles.icon2}/></Icon>
             <Text style={styles.tasks}>9Tasks</Text>
             </View>
 </View>
             
 <View style={{flexDirection:"row",justifyContent:'space-between',padding:10}}>
 <View style={styles.rectangle12}>
-            <Text style={styles.sport}>Sport</Text>
+            <Icon  name="ios-football" style={styles.icon1} >           
+            <Text style={styles.sport}>Sport</Text><Icon  name="ios-more" style={styles.icon2}/></Icon>
             <Text style={styles.tasks}>10Tasks</Text>
             </View>
 </View>
@@ -33,20 +37,19 @@ export class Card extends React.Component{
 
 <View style={{flexDirection:"row",justifyContent:'space-between',padding:10}}>
 <View style={styles.rectangle12}>
-            <Text style={styles.event}>Event</Text>
+            <Icon  name="ios-folder-open" style={styles.icon1} >       
+            <Text style={styles.event}>Event</Text><Icon  name="ios-more" style={styles.icon2}/></Icon>
             <Text style={styles.tasks}>10Tasks</Text>
             </View>
 </View>
             
 <View style={{flexDirection:"row",justifyContent:'space-between',padding:10}}>
 <View style={styles.rectangle12}>
-            <Text style={styles.work}>Work</Text>
+<Icon  name="md-walk" style={styles.icon1} >
+            <Text style={styles.work}>Work</Text><Icon  name="ios-more" style={styles.icon2}/></Icon>
             <Text style={styles.tasks}>25Tasks</Text>
             </View>
 </View>
-
-            
-
             </View>
 
             </View>
@@ -60,7 +63,7 @@ const styles=StyleSheet.create({
         height: 94,
         borderRadius: 20,
         backgroundColor: "#ffffff",
-        paddingStart:100,
+        paddingStart:5,
         
       },
       personal : {
@@ -71,8 +74,9 @@ const styles=StyleSheet.create({
         fontWeight: "bold",
         fontStyle: "normal",
         letterSpacing: 0,
-        textAlign:'left',
-        color: "#a3a3a3"
+        alignItems: 'center',
+        color: "#a3a3a3",
+       
       },
       tasks : {
         width: 48,
@@ -95,7 +99,7 @@ const styles=StyleSheet.create({
         height: 94,
         borderRadius: 20,
         backgroundColor: "#ffffff",
-        paddingStart:100
+        
       },
      
       shoping : {
@@ -142,6 +146,17 @@ const styles=StyleSheet.create({
         letterSpacing: 0,
         textAlign: "center",
         color: "#a3a3a3"
-      }
+      },
+      icon1:{
+      paddingLeft:40,
+        fontSize: 30, 
+        color: 'pink'
+      },
+      icon2:{
+        paddingLeft: 40,
+        fontSize: 30, 
+        color: 'black'
+      },
+
      
 });
