@@ -1,6 +1,6 @@
-import React from 'react';
-import { Text, StyleSheet, View } from 'react-native'
-import { Icon } from 'native-base';
+import React from "react";
+import { Text, StyleSheet, View } from "react-native";
+import { Icon } from "native-base";
 
 export class Card extends React.Component {
     render() {
@@ -55,9 +55,75 @@ export class Card extends React.Component {
                 </View>
 
             </View>
-        );
-    }
+          </View>
 
+          <View
+            style={{
+              flexDirection: "row",
+              justifyContent: "space-between",
+              padding: 10
+            }}
+          >
+            <View style={styles.rectangle12}>
+              <Icon name="md-rose" style={styles.icon1}>
+                <Text style={styles.shoping}>Shoping</Text>
+                <Icon name="ios-more" style={styles.icon2} />
+              </Icon>
+              <Text style={styles.tasks}>9Tasks</Text>
+            </View>
+          </View>
+
+          <View
+            style={{
+              flexDirection: "row",
+              justifyContent: "space-between",
+              padding: 10
+            }}
+          >
+            <View style={styles.rectangle12}>
+              <Icon name="ios-football" style={styles.icon1}>
+                <Text style={styles.sport}>Sport</Text>
+                <Icon name="ios-more" style={styles.icon2} />
+              </Icon>
+              <Text style={styles.tasks}>10Tasks</Text>
+            </View>
+          </View>
+
+          <View
+            style={{
+              flexDirection: "row",
+              justifyContent: "space-between",
+              padding: 10
+            }}
+          >
+            <View style={styles.rectangle12}>
+              <Icon name="ios-folder-open" style={styles.icon1}>
+                <Text style={styles.event}>Event</Text>
+                <Icon name="ios-more" style={styles.icon2} />
+              </Icon>
+              <Text style={styles.tasks}>10Tasks</Text>
+            </View>
+          </View>
+
+          <View
+            style={{
+              flexDirection: "row",
+              justifyContent: "space-between",
+              padding: 10
+            }}
+          >
+            <View style={styles.rectangle12}>
+              <Icon name="md-walk" style={styles.icon1}>
+                <Text style={styles.work}>Work</Text>
+                <Icon name="ios-more" style={styles.icon2} />
+              </Icon>
+              <Text style={styles.tasks}>25Tasks</Text>
+            </View>
+          </View>
+        </View>
+      </View>
+    );
+  }
 }
 const styles = StyleSheet.create({
     rectangle5: {
