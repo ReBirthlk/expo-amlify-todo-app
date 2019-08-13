@@ -6,29 +6,22 @@ export class CategoryHeader extends React.Component{
     render() {
         return (
             <View style={styles.rectangle3}>
-           <StatusBar backgroundColor="#fcb69f"/>
-           <Icon  name="md-menu" style={styles.icon} ><Text style={styles.category}>Category</Text>
+            <StatusBar backgroundColor="#fcb69f"/>
+            <Icon  name="md-menu" style={styles.icon} >
+            <Text style={styles.category}>Category</Text>
             <Icon  name="md-add-circle" style={styles.icon2}/></Icon>
-           
             </View>
-            
-
         );
     }
-
 }
 const styles=StyleSheet.create({
     category:{
-        width: 70,
-        height: 20,
         fontFamily: "HelveticaNeue",
         fontSize: 16,
         fontWeight: "bold",
         fontStyle: "normal",
-       
         color: "#ffffff",
-        
-    
+        textAlign:'center'
     },
     rectangle3 : {
         width: 375,
@@ -41,7 +34,6 @@ const styles=StyleSheet.create({
         color: '#ffffff'
     },
     icon2:{
-        paddingEnd:100,
         color: '#ffffff',
         fontSize: 30
     }
