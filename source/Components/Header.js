@@ -1,6 +1,6 @@
-<<<<<<< HEAD
 import React from'react';
 import {StyleSheet,View,Text} from 'react-native'
+import {Icon} from 'native-base';
 
 
 
@@ -9,48 +9,52 @@ export class Header extends React.Component{
     render(){
         return(
             
-            <View
-                style={styles.rectangle3}>
-                    <View  style={styles.schedule}>
-                        <Text>Schedule</Text>
-                        <Text>12,AUG 2019</Text>
-                    </View>
+            <View style={styles.rectangle3}>
+                <View style={{flexDirection:"row",justifyContent:'space-between',padding:5}}>
+                    <Icon style={styles.icon_menu}name="md-menu" size={30} color='green'/>
+                    <Text style={styles.topic}>Schedule</Text>
+                </View>
+                
+                <Text style={styles.date}>12,AUG 2019</Text>
+                       
             </View>
         );
     }
 
 }
 const styles=StyleSheet.create({
+    icon_menu:{
+        
+    },
+
+    topic:{
+        fontSize: 20,
+        color:'#ffffff',
+        paddingStart:10
+
+    },
     rectangle3:{
         width: 412,
         height: 175,
-        backgroundColor:'#fcb69f'
+        backgroundColor:'#fcb69f',
+        
+        
       },
+     
       schedule:{
-        width: 72,
-        height: 17,
-        fontFamily: "HelveticaNeue",
-        fontSize: 16,
-        fontWeight: "bold",
-        fontStyle: "normal",
         letterSpacing: 0,
-        textAlign: "center",
+        textAlign: 'center',
         color: "#ffffff"
       },
       date:{
-        width: 92,
-        height: 22,
-        fontFamily: "HelveticaNeue",
-        fontSize: 20,
-        fontWeight: "normal",
-        fontStyle: "normal",
+        fontFamily: 'HelveticaNeue',
+        fontSize: 18,
+        fontWeight: 'normal',
+        fontStyle: 'normal',
         letterSpacing: 0,
-        textAlign: "center",
-        color: "#ffffff"
-
+        textAlign: 'center',
+        color: "#ffffff",
       }
    
 
 });
-=======
->>>>>>> 93f26c776cf4baca1bdf535eaf3f8c12c9aefea6
