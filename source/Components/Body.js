@@ -66,9 +66,10 @@ const styles = StyleSheet.create({
     backgroundColor: "#f0f0f0"
   },
   Icon1: {
-    paddingStart: 300
+    paddingStart: 220
   },
   Today: {
+    paddingStart:30,
     fontFamily: "HelveticaNeue",
     fontSize: 28,
     fontWeight: "bold",
@@ -78,7 +79,7 @@ const styles = StyleSheet.create({
   },
 
   rectangle12: {
-    width: 325,
+    width: 250,
     height: 94,
     borderRadius: 20,
     backgroundColor: "#fcb69f",

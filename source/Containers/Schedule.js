@@ -4,6 +4,10 @@ import { Header } from "../Components/Header";
 import { Body } from "../Components/Body";
 
 export class Schedule extends React.Component {
+  static navigationOptions = {
+    header: null
+};
+
   render() {
     return (
       <View style={styles.container}>

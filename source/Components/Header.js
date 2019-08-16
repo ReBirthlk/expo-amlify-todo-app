@@ -38,7 +38,7 @@ export class Header extends React.Component {
 }
 const styles = StyleSheet.create({
   icon_pluscricle: {
-    paddingStart: 133
+    paddingStart: 80
   },
   icon_menu: {
     paddingLeft: 5
