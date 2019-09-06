@@ -8,6 +8,8 @@
     "lint": "eslint ."
   },
   "dependencies": {
+    "aws-amplify": "^1.1.38",
+    "aws-amplify-react-native": "^2.1.19",
     "native-base": "^2.13.4",
     "react": "16.8.6",
     "react-native": "0.60.4",
