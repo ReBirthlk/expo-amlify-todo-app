@@ -36,7 +36,7 @@ export class Profile extends React.Component {
          style={styles.button}
          onPress={this.onPress}
        >
-         <Text style={styles.edit} >Edit        </Text>
+         <Text style={styles.edit} >Edit</Text>
        </TouchableOpacity>
 
    <Text style={styles.head}>Profile</Text>
@@ -51,7 +51,7 @@ export class Profile extends React.Component {
  <Text style={styles.text1}>Name</Text>
  {
    this.state.isEdit? 
-   <TextInput style={styles.text2}>{this.state.textValue1} </TextInput>:<Text style={styles.text2}>{this.state.textValue1} </Text>
+   <TextInput style={styles.text2}>{this.state.textValue1}</TextInput>:<Text style={styles.text2}>{this.state.textValue1}</Text>
  }
    </View>
  <View style={styles.rectangle967}/>
@@ -59,14 +59,14 @@ export class Profile extends React.Component {
  <View style={styles.rectangle966}>
  <Text style={styles.text1}>Email</Text>
  {
-   this.state.isEdit? <TextInput style={styles.text2}>{this.state.textValue2} </TextInput>:<Text style={styles.text2}>{this.state.textValue2} </Text>
+   this.state.isEdit? <TextInput style={styles.text2}>{this.state.textValue2}</TextInput>:<Text style={styles.text2}>{this.state.textValue2}</Text>
  }</View>
 <View style={styles.rectangle965}/>
 
 <View style={styles.rectangle966}>
  <Text style={styles.text1}>Natinality</Text>
  {
-   this.state.isEdit? <TextInput style={styles.text2}>{this.state.textValue3} </TextInput>:<Text style={styles.text2}>{this.state.textValue3} </Text>
+   this.state.isEdit? <TextInput style={styles.text2}>{this.state.textValue3}</TextInput>:<Text style={styles.text2}>{this.state.textValue3}</Text>
  }</View>
  <View style={styles.rectangle963}/>
 </View>
@@ -150,7 +150,8 @@ const styles = StyleSheet.create({
     lineHeight: 23,
     letterSpacing: 0,
     textAlign: "left",
-    color: "#ffffff"
+    color: "#ffffff",
+    marginLeft:20
   },
   rectangle967 : {
     width: 375,
@@ -178,7 +179,7 @@ const styles = StyleSheet.create({
     letterSpacing: 0,
     textAlign: "right",
     color: "#ffffff", 
-      
+    marginRight:30 
   },
   edit: {
     fontFamily: "Catamaran",
@@ -189,7 +190,7 @@ const styles = StyleSheet.create({
     letterSpacing: 0,
     textAlign:"right",
     color: "#ffffff",
-    
+    marginRight:30
   },
   button:{
     color:"#00aea7",

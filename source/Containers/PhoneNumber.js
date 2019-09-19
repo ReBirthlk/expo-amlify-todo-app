@@ -230,7 +230,7 @@ const styles = StyleSheet.create({
   },
   bg :{
     marginTop:380,
-    width: 375,
+    width: 360,
     height: 60,
     backgroundColor: "#00aea7",
     borderTopRightRadius: 70   
