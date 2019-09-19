@@ -16,12 +16,21 @@ export class Menu extends React.Component {
             <View style={styles.container}>
                 <View style={styles.buttonRow}>
                     <TouchableOpacity style={styles.buttonStyles} onPress={()=>this.props.navigate('ProfileRT')}>
-                            <Text style={styles.buttonText}>Schedule</Text>
+                            <Text style={styles.buttonText}>Profile</Text>
                     </TouchableOpacity>
                     <TouchableOpacity style={styles.buttonStyles} onPress={()=>this.props.navigate('PhoneRT')}>
-                        <Text style={styles.buttonText}>Category</Text>
+                        <Text style={styles.buttonText}>Mobile</Text>
                     </TouchableOpacity>
+                    
                 </View>
+                <View style={styles.buttonRow}>
+                <TouchableOpacity style={styles.buttonStyles} onPress={()=>this.props.navigate('OtpRT')}>
+                        <Text style={styles.buttonText}>OTP</Text>
+                    </TouchableOpacity>
+                    <TouchableOpacity style={styles.buttonStyles} onPress={()=>this.props.navigate('OtpRT')}>
+                        <Text style={styles.buttonText}>Lan</Text>
+                    </TouchableOpacity>
+                    </View>
             </View>
 
       );

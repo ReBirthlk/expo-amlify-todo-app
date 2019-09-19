@@ -3,6 +3,7 @@ import { Category } from "./source/Containers/Category.js";
 import { Schedule } from "./source/Containers/Schedule.js";
 import {Profile} from "./source/Containers/Profile.js";
 import {PhoneNumber} from "./source/Containers/PhoneNumber.js";
+import {OTP} from "./source/Containers/Otp.js";
 import  {Home} from "./source/Containers/Home.js";
 import {StackNavigator} from 'react-navigation';
 
@@ -21,6 +22,9 @@ const MyRoutes=StackNavigator({
   },
   PhoneRT:{
     screen:PhoneNumber
+  },
+  OtpRT:{
+    screen:OTP
   }
 });
 
