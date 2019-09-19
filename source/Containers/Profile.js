@@ -1,5 +1,5 @@
 import React from "react";
-import { View,StyleSheet,Text,StatusBar,Image,Button} from "react-native";
+import { View,StyleSheet,Text,StatusBar,Image,Button,TouchableOpacity,TextInput} from "react-native";
 import { Icon } from "native-base";
 
 export class Profile extends React.Component {
@@ -8,6 +8,18 @@ export class Profile extends React.Component {
       header: null
   };
 
+  state = {
+    textValue1: 'John Doe ',
+    textValue2: 'johndoe@mail.com ',
+    textValue3: 'USA ',
+    isEdit : false
+  }
+
+  onPress = () => {
+    this.setState({
+      isEdit:!this.state.isEdit
+    })
+  }
   render() {
     return (
       <View style={styles.container}>
@@ -19,7 +31,14 @@ export class Profile extends React.Component {
     source={require("../../assets/Icon/light_back.png")}
     style={styles.backButton}
     resizeMode="contain"/>
-  <Text style={styles.edit}>Edit       </Text>
+
+    <TouchableOpacity
+         style={styles.button}
+         onPress={this.onPress}
+       >
+         <Text style={styles.edit} >Edit        </Text>
+       </TouchableOpacity>
+
    <Text style={styles.head}>Profile</Text>
    <Text style={styles.travel}>Please read our terms and conditions</Text>
    </View>
@@ -30,17 +49,25 @@ export class Profile extends React.Component {
       
  <View style={styles.rectangle9661}>
  <Text style={styles.text1}>Name</Text>
-   <Text style={styles.text2}>John Doe</Text></View>
+ {
+   this.state.isEdit? 
+   <TextInput style={styles.text2}>{this.state.textValue1} </TextInput>:<Text style={styles.text2}>{this.state.textValue1} </Text>
+ }
+   </View>
  <View style={styles.rectangle967}/>
 
  <View style={styles.rectangle966}>
  <Text style={styles.text1}>Email</Text>
- <Text style={styles.text2}>johndoe@mail.com</Text></View>
+ {
+   this.state.isEdit? <TextInput style={styles.text2}>{this.state.textValue2} </TextInput>:<Text style={styles.text2}>{this.state.textValue2} </Text>
+ }</View>
 <View style={styles.rectangle965}/>
 
 <View style={styles.rectangle966}>
  <Text style={styles.text1}>Natinality</Text>
- <Text style={styles.text2}>USA</Text></View>
+ {
+   this.state.isEdit? <TextInput style={styles.text2}>{this.state.textValue3} </TextInput>:<Text style={styles.text2}>{this.state.textValue3} </Text>
+ }</View>
  <View style={styles.rectangle963}/>
 </View>
     );
@@ -74,7 +101,8 @@ const styles = StyleSheet.create({
     lineHeight: 30,
     letterSpacing: -0.42,
     textAlign: "left",
-    color: "#ffffff",  
+    color: "#ffffff",
+    paddingTop:10  
   },
   backButton: {
     marginTop: 10,
@@ -153,7 +181,6 @@ const styles = StyleSheet.create({
       
   },
   edit: {
-    marginTop:-25,
     fontFamily: "Catamaran",
     fontSize: 14,
     fontWeight: "bold",
@@ -162,6 +189,12 @@ const styles = StyleSheet.create({
     letterSpacing: 0,
     textAlign:"right",
     color: "#ffffff",
-    paddingLeft:-50
-  }
+    
+  },
+  button:{
+    color:"#00aea7",
+    marginTop:-25,
+    paddingLeft:310
+
+  },
 });
