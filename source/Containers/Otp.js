@@ -75,7 +75,7 @@ const styles = StyleSheet.create({
         padding: 30,
     },
     txtMargin: {
-        margin: 3
+        margin: 3,
     },
     inputRadius: {
         marginTop:30,
@@ -104,7 +104,7 @@ const styles = StyleSheet.create({
         color: "#00aea7"
     },
     resendOtp:{
-        marginTop:30,
+        marginTop:40,
         marginBottom:440,
         fontFamily: "Catamaran",
         fontSize: 14,

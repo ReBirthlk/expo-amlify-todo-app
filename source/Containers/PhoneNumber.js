@@ -153,7 +153,6 @@ export class PhoneNumber extends React.Component  {
 
 const styles = StyleSheet.create({
   container: {
-   
     backgroundColor: '#f8ffff',
     justifyContent: 'center',
     flexDirection: 'column',
@@ -167,15 +166,15 @@ const styles = StyleSheet.create({
     color: '#000000',
   },
   itemStyle: {
-    marginTop:20,
-    width: 311,
+    marginTop:30,
+    width: 300,
     height: 50,
     borderRadius: 5,
     backgroundColor: "#ffffff",
     borderStyle: "solid",
     borderWidth: 1,
     borderColor: "rgba(0, 174, 167, 0.2)",
-    marginLeft:20
+    marginLeft:30,
   },
   iconStyle: {
     color: '#D3D3D3',
@@ -226,7 +225,8 @@ const styles = StyleSheet.create({
     letterSpacing: -0.42,
     textAlign: "center",
     color: "#00aea7",
-    paddingTop:50
+    paddingTop:50,
+    paddingRight:10
   },
   bg :{
     marginTop:380,

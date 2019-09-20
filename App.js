@@ -5,6 +5,7 @@ import {Profile} from "./source/Containers/Profile.js";
 import {PhoneNumber} from "./source/Containers/PhoneNumber.js";
 import {OTP} from "./source/Containers/Otp.js";
 import  {Home} from "./source/Containers/Home.js";
+import {Language} from "./source/Containers/Language.js"
 import {StackNavigator} from 'react-navigation';
 
 const MyRoutes=StackNavigator({
@@ -25,6 +26,9 @@ const MyRoutes=StackNavigator({
   },
   OtpRT:{
     screen:OTP
+  },
+  LanRT:{
+    screen:Language
   }
 });
 

@@ -27,7 +27,7 @@ export class Menu extends React.Component {
                 <TouchableOpacity style={styles.buttonStyles} onPress={()=>this.props.navigate('OtpRT')}>
                         <Text style={styles.buttonText}>OTP</Text>
                     </TouchableOpacity>
-                    <TouchableOpacity style={styles.buttonStyles} onPress={()=>this.props.navigate('OtpRT')}>
+                    <TouchableOpacity style={styles.buttonStyles} onPress={()=>this.props.navigate('LanRT')}>
                         <Text style={styles.buttonText}>Lan</Text>
                     </TouchableOpacity>
                     </View>
