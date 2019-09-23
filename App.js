@@ -6,6 +6,7 @@ import {PhoneNumber} from "./source/Containers/PhoneNumber.js";
 import {OTP} from "./source/Containers/Otp.js";
 import  {Home} from "./source/Containers/Home.js";
 import {Language} from "./source/Containers/Language.js"
+import{SignUpFrom} from "./source/Containers/SignUpFrom.js"
 import {StackNavigator} from 'react-navigation';
 
 const MyRoutes=StackNavigator({
@@ -29,6 +30,9 @@ const MyRoutes=StackNavigator({
   },
   LanRT:{
     screen:Language
+  },
+  SignRT:{
+    screen:SignUpFrom
   }
 });
 

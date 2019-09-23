@@ -1,6 +1,5 @@
 import React from "react";
-import { View, StyleSheet,Text,Button,StatusBar,TextInput,TouchableOpacity,Picker} from "react-native";
-import {Icon} from 'native-base'
+import { View, StyleSheet,Text,StatusBar,TouchableOpacity,Picker} from "react-native";
 
 export class Language extends React.Component {
 
@@ -9,7 +8,7 @@ export class Language extends React.Component {
   };
   
   state = {  
-            choosenIndex: 0  
+        choosenIndex: 0  
     };
 
   render() {
@@ -169,7 +168,7 @@ const styles = StyleSheet.create({
     marginLeft:30,
   },
   next : {
-    marginTop:10,
+    marginTop:17,
     fontFamily: "Catamaran",
     fontSize: 16,
     fontWeight: "600",

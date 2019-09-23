@@ -31,6 +31,13 @@ export class Menu extends React.Component {
                         <Text style={styles.buttonText}>Lan</Text>
                     </TouchableOpacity>
                     </View>
+
+                  <View style={styles.buttonRow}>
+                    <TouchableOpacity style={styles.buttonStyles} onPress={()=>this.props.navigate('SignRT')}>
+                            <Text style={styles.buttonText}>Sign up</Text>
+                    </TouchableOpacity>
+                    
+                </View>   
             </View>
 
       );
