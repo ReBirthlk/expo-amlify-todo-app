@@ -6,8 +6,9 @@ import {PhoneNumber} from "./source/Containers/PhoneNumber.js";
 import {OTP} from "./source/Containers/Otp.js";
 import  {Home} from "./source/Containers/Home.js";
 import {Language} from "./source/Containers/Language.js"
-import{SignUpFrom} from "./source/Containers/SignUpFrom.js"
+import{SignUpForm} from "./source/Containers/SignUpForm.js"
 import {StackNavigator} from 'react-navigation';
+import {PopUpScreen}from './source/Containers/PopUpForm.js';
 
 const MyRoutes=StackNavigator({
   HomeRT:{
@@ -32,7 +33,10 @@ const MyRoutes=StackNavigator({
     screen:Language
   },
   SignRT:{
-    screen:SignUpFrom
+    screen:SignUpForm
+  },
+  PopRT:{
+    screen:PopUpScreen
   }
 });
 

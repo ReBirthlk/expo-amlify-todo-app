@@ -36,6 +36,9 @@ export class Menu extends React.Component {
                     <TouchableOpacity style={styles.buttonStyles} onPress={()=>this.props.navigate('SignRT')}>
                             <Text style={styles.buttonText}>Sign up</Text>
                     </TouchableOpacity>
+                    <TouchableOpacity style={styles.buttonStyles} onPress={()=>this.props.navigate('PopRT')}>
+                            <Text style={styles.buttonText}>Pop up</Text>
+                    </TouchableOpacity>
                     
                 </View>   
             </View>

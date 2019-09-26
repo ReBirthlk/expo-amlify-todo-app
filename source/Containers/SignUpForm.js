@@ -2,7 +2,7 @@ import React from "react";
 import { View, StyleSheet,Text,StatusBar,TouchableOpacity,TextInput} from "react-native";
 
 
-export class SignUpFrom extends React.Component {
+export class SignUpForm extends React.Component {
 
   static navigationOptions = {
       header: null
